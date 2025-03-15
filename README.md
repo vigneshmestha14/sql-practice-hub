@@ -11,10 +11,10 @@ This repository contains comprehensive Pyspark/SparkSQL solutions for challenges
 ---
 
 ## 📌 Table of Contents
-- 🟢 [Easy](#Coding%20Ninjas/Easy)
-- 🟡 [Moderate](#Coding%20Ninjas/Moderate)
-- 🔴 [Hard](#Coding%20Ninjas/Hard)
-- 🟣 [Ninjas](#Coding%20Ninjas/Ninjas)
+- 🟢 [Easy](/Coding%20Ninjas/Easy)
+- 🟡 [Moderate](/Coding%20Ninjas/Moderate)
+- 🔴 [Hard](/Coding%20Ninjas/Hard)
+- 🟣 [Ninjas](/Coding%20Ninjas/Ninjas)
 
 ---
 
