@@ -4,8 +4,8 @@
 ## 🚀 About This Repository
 This repository contains comprehensive Pyspark/SparkSQL solutions for challenges.
 
-✔️ Solutions are executed on **Microsoft Fabric Notebooks**.
-✔️ Categorized by difficulty: **Easy, Moderate, Hard, and Ninjas**.
+✔️ Solutions are executed on **Microsoft Fabric Notebooks**.                                       
+✔️ Categorized by difficulty: **Easy, Moderate, Hard, and Ninjas**.                               
 ✔️ Ideal for interview preparation with Pyspark problems from top companies like **Google, Amazon, Microsoft, Meta, and more**.
 
 ---
@@ -18,7 +18,7 @@ This repository contains comprehensive Pyspark/SparkSQL solutions for challenges
 
 ---
 
-## 🟢 Difficulty: Easy (00/00) <a name="easy"></a>
+## 🟢 Difficulty: Easy (20/20) <a name="easy"></a>
 
 | ID  | Challenge & Solution Script | Company |
 |---- |-----------------------------|---------|
@@ -52,7 +52,7 @@ This repository contains comprehensive Pyspark/SparkSQL solutions for challenges
 
 ---
 
-## 🟠 Difficulty: Moderate (00/00) <a name="moderate"></a>
+## 🟠 Difficulty: Moderate (33/33) <a name="moderate"></a>
 
 
 | ID  | Challenge & Solution Script | Company |
