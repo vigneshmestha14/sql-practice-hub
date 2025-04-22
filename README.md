@@ -22,11 +22,11 @@ This repository contains comprehensive Pyspark/SparkSQL solutions for challenges
 
 | ID  | Challenge & Solution Script | Company |
 |---- |-----------------------------|---------|
-| 1   | [IMDb Metacritic Rating](/Coding%20Ninjas/Easy/01-%20IMDb%20Metacritic%20Rating/01-%20IMDb%20Metacritic%20Rating.ipynb) | Company A |
-| 2   | [IMDb Max Weighted Rating](/Coding%20Ninjas/Easy/02-%20IMDb%20Max%20Weighted%20Rating/02-%20IMDb%20Max%20Weighted%20Rating.ipynb) | Company B |
-| 3   | [Students DB](/Coding%20Ninjas/Easy/03-%20Students%20DB/03-%20Students%20DB.ipynb) | Company C |
-| 4   | [Big Countries](/Coding%20Ninjas/Easy/04-%20Big%20Countries/04-%20Big%20Countries.ipynb) | Company D |
-| 5   | [Sales Executive](/Coding%20Ninjas/Easy/05-%20Sales%20Executive/05-%20Sales%20Executive.ipynb) | Company E |
+| 1   | [IMDb Metacritic Rating](/Coding%20Ninjas/Easy/01-%20IMDb%20Metacritic%20Rating/01-%20IMDb%20Metacritic%20Rating.ipynb) | TCS |
+| 2   | [IMDb Max Weighted Rating](/Coding%20Ninjas/Easy/02-%20IMDb%20Max%20Weighted%20Rating/02-%20IMDb%20Max%20Weighted%20Rating.ipynb) | Thought Works |
+| 3   | [Students DB](/Coding%20Ninjas/Easy/03-%20Students%20DB/03-%20Students%20DB.ipynb) | TCS |
+| 4   | [Big Countries](/Coding%20Ninjas/Easy/04-%20Big%20Countries/04-%20Big%20Countries.ipynb) | IBM, Infosys |
+| 5   | [Sales Executive](/Coding%20Ninjas/Easy/05-%20Sales%20Executive/05-%20Sales%20Executive.ipynb) | Wipro |
 
 <details>
 <summary>Click to expand full table...</summary>
