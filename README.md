@@ -18,6 +18,7 @@ This repository contains comprehensive Pyspark/SparkSQL solutions for challenges
 
 ---
 
+
 ## 🟢 Difficulty: Easy (20/20) <a name="easy"></a>
 
 | ID  | Challenge & Solution Script | Company |
