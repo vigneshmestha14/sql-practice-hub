@@ -58,7 +58,7 @@ This repository contains comprehensive Pyspark/SparkSQL solutions for challenges
 
 | ID  | Challenge & Solution Script | Company |
 |---- |-----------------------------|---------|
-| 1   | [IMDb Rating](/Coding%20Ninjas/Moderate/01-%20IMDb%20Rating/01-%20IMDb%20Rating.ipynb) | Company A |
+| 1   | [IMDb Rating](/Coding%20Ninjas/Moderate/01-%20IMDb%20Rating/01-%20IMDb%20Rating.ipynb) | Thought Works |
 | 2   | [Second Highest Salary](/Coding%20Ninjas/Moderate/02-%20Second%20Highest%20Salary/02-%20Second%20Highest%20Salary.ipynb) | Company B |
 | 3   | [Number of Calls Between Two Persons](/Coding%20Ninjas/Moderate/03-%20Number%20of%20Calls%20Between%20Two%20Persons/03-%20Number%20of%20Calls%20Between%20Two%20Persons.ipynb) | Company C |
 | 4   | [Geography Report](/Coding%20Ninjas/Moderate/04-%20Geography%20Report/04-%20Geography%20Report.ipynb) | Company D |
