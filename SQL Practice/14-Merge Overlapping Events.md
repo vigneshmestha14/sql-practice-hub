@@ -1,25 +1,29 @@
-# Problem Statement
-We have a table `events(hall_id, from_date, to_date)` storing hall booking ranges.  
-Some bookings overlap or touch. We need to **merge them into single continuous events per hall**.
+
+````markdown
+# Swap Seat IDs of Every Two Consecutive Students
+
+## Problem Statement
+We need to **swap the seat IDs of every two consecutive students**.  
+- If the last student has an odd ID, their seat remains unchanged.
 
 ---
 
 ## Table and Sample Data
 
 ```sql
-CREATE TABLE events (
-    hall_id INT,
-    from_date DATE,
-    to_date DATE
+CREATE TABLE seat (
+    id INT,
+    name VARCHAR(10)
 );
 
-INSERT INTO events VALUES (1,'2025-01-05','2025-01-09');
-INSERT INTO events VALUES (1,'2025-01-06','2025-01-10');
-INSERT INTO events VALUES (1,'2025-01-07','2025-01-10');
-INSERT INTO events VALUES (1,'2025-01-11','2025-01-15');
-INSERT INTO events VALUES (2,'2025-02-15','2025-02-19');
-INSERT INTO events VALUES (2,'2025-02-16','2025-02-20');
-INSERT INTO events VALUES (2,'2025-02-21','2025-02-25');
+INSERT INTO seat VALUES (1,'John');
+INSERT INTO seat VALUES (2,'Tom');
+INSERT INTO seat VALUES (3,'Yash');
+INSERT INTO seat VALUES (4,'Bhavna');
+INSERT INTO seat VALUES (5,'Aryan');
+INSERT INTO seat VALUES (6,'Kiran');
+INSERT INTO seat VALUES (7,'Prativa');
+INSERT INTO seat VALUES (8,'Ash');
 ````
 
 ---
@@ -27,41 +31,39 @@ INSERT INTO events VALUES (2,'2025-02-21','2025-02-25');
 ## SQL Solution
 
 ```sql
-WITH ordered AS (
-    SELECT
-        hall_id,
-        from_date,
-        to_date,
-        LAG(to_date) OVER (PARTITION BY hall_id ORDER BY from_date) AS prev_end
-    FROM events
-),
-grouped AS (
-    SELECT
-        hall_id,
-        from_date,
-        to_date,
-        SUM(CASE WHEN from_date <= COALESCE(prev_end, from_date) THEN 0 ELSE 1 END)
-            OVER (PARTITION BY hall_id ORDER BY from_date) AS grp
-    FROM ordered
-)
-SELECT
-    hall_id,
-    MIN(from_date) AS merged_from,
-    MAX(to_date)  AS merged_to
-FROM grouped
-GROUP BY hall_id, grp
-ORDER BY hall_id, merged_from;
+SELECT 
+    CASE
+        WHEN id % 2 = 1 AND id + 1 <= (SELECT MAX(id) FROM seat) THEN id + 1
+        WHEN id % 2 = 0 THEN id - 1
+        ELSE id
+    END AS new_id,
+    name
+FROM seat
+ORDER BY new_id;
 ```
+
+---
+
+## Explanation
+
+* If the `id` is **odd** and not the last record → shift it to `id+1`.
+* If the `id` is **even** → shift it to `id-1`.
+* If the `id` is the **last odd seat** → keep it unchanged.
 
 ---
 
 ## Output
 
-| hall_id | merged_from | merged_to |
-| -------- | ------------ | ---------- |
-| 1        | 2025-01-05   | 2025-01-10 |
-| 1        | 2025-01-11   | 2025-01-15 |
-| 2        | 2025-02-15   | 2025-02-20 |
-| 2        | 2025-02-21   | 2025-02-25 |
+| new\_id | name    |
+| ------- | ------- |
+| 1       | Tom     |
+| 2       | John    |
+| 3       | Bhavna  |
+| 4       | Yash    |
+| 5       | Kiran   |
+| 6       | Aryan   |
+| 7       | Ash     |
+| 8       | Prativa |
 
 ---
+
