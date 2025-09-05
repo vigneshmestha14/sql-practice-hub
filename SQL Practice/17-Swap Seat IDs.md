@@ -46,13 +46,6 @@ ORDER BY new_id;
 
 ---
 
-## Explanation
-
-* If the `id` is **odd** and not the last record → shift it to `id+1`.
-* If the `id` is **even** → shift it to `id-1`.
-* If the `id` is the **last odd seat** → keep it unchanged.
-
----
 
 ## Output
 
